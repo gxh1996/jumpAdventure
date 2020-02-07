@@ -1,0 +1,54 @@
+{
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "encryptJs": true,
+  "excludeScenes": [
+    "d67c3ae8-623a-4f3d-a1d4-7c215ed6a3c6",
+    "cd5ddc31-c418-47c7-8d4a-7f32e1c37d2c",
+    "77972ffc-29d7-4295-9ddc-01fbd8039aa4"
+  ],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.jumpAdventure",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "startScene": "decbd962-bbd8-42e1-924c-23a521ac79f8",
+  "title": "jumpAdventure",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6466788910763a18",
+    "orientation": "landscapeRight",
+    "separate_engine": false,
+    "subContext": "openDataProject"
+  },
+  "xxteaKey": "927ed026-5a58-4d",
+  "zipCompressJs": true
+}

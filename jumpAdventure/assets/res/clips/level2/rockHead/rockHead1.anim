@@ -1,0 +1,54 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "rockHead1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 22,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": 694.682
+        },
+        {
+          "frame": 1,
+          "value": 427.558
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 0,
+      "func": "arrivePoint",
+      "params": [
+        "left"
+      ]
+    },
+    {
+      "frame": 0.05,
+      "func": "arrivePointBefore",
+      "params": [
+        "right"
+      ]
+    },
+    {
+      "frame": 0.95,
+      "func": "arrivePointBefore",
+      "params": [
+        "left"
+      ]
+    },
+    {
+      "frame": 1,
+      "func": "arrivePoint",
+      "params": [
+        "right"
+      ]
+    }
+  ]
+}

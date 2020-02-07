@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>Grey On (32x8)1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{36,22},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{70,12},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{36,12},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{70,2},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{36,2},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,22},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,12},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+            <key>Grey On (32x8)8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{32,8}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{32,8}}</string>
+                <key>sourceSize</key>
+                <string>{32,8}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>on.png</string>
+            <key>size</key>
+            <string>{104,32}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:0e80c32a76c9db98d35f30212cf79bf7$</string>
+            <key>textureFileName</key>
+            <string>on.png</string>
+        </dict>
+    </dict>
+</plist>

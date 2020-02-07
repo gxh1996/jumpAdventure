@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>Hit (16x32)1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,104},{16,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,32}}</string>
+                <key>sourceSize</key>
+                <string>{16,32}</string>
+            </dict>
+            <key>Hit (16x32)2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,70},{16,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,32}}</string>
+                <key>sourceSize</key>
+                <string>{16,32}</string>
+            </dict>
+            <key>Hit (16x32)3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,36},{16,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,32}}</string>
+                <key>sourceSize</key>
+                <string>{16,32}</string>
+            </dict>
+            <key>Hit (16x32)4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{16,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{16,32}}</string>
+                <key>sourceSize</key>
+                <string>{16,32}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>hit.png</string>
+            <key>size</key>
+            <string>{20,138}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:5b31f2c7cb621c0c873e106457c23363$</string>
+            <key>textureFileName</key>
+            <string>hit.png</string>
+        </dict>
+    </dict>
+</plist>

@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "spikedBall",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 54,
+  "curveData": {
+    "props": {
+      "angle": [
+        {
+          "frame": 0,
+          "value": 90,
+          "curve": "sineInOut"
+        },
+        {
+          "frame": 1,
+          "value": -90,
+          "curve": "quartOut"
+        }
+      ]
+    }
+  },
+  "events": []
+}

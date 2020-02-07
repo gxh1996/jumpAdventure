@@ -1,0 +1,59 @@
+{
+    "###direction": "{任务名：[{type:资源类型,urls:[url,...]},...]}",
+    "global": [
+        {
+            "direction": "全局资源",
+            "type": "json",
+            "urls": [
+                "json/gameConfig",
+                "json/userData"
+            ]
+        },
+        {
+            "type": "audio",
+            "urls": [
+                "sounds/BGM"
+            ]
+        }
+    ],
+    "indexScene": [
+        {
+            "type": "prefab",
+            "urls": [
+                "prefabs/ui/selectPanel/level",
+                "prefabs/ui/selectPanel/page",
+                "prefabs/ui/selectPanel/star"
+            ]
+        }
+    ],
+    "level1": [
+        {
+            "type": "prefab",
+            "urls": [
+                "prefabs/levels/level1"
+            ]
+        },
+        {
+            "type": "audio",
+            "urls": [
+                "sounds/game_over",
+                "sounds/jump"
+            ]
+        }
+    ],
+    "level2": [
+        {
+            "type": "prefab",
+            "urls": [
+                "prefabs/levels/level2"
+            ]
+        },
+        {
+            "type": "audio",
+            "urls": [
+                "sounds/game_over",
+                "sounds/jump"
+            ]
+        }
+    ]
+}

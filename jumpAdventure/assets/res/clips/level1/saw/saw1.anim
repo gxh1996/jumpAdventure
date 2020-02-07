@@ -1,0 +1,57 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "saw1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            1009,
+            -17,
+            0
+          ]
+        },
+        {
+          "frame": 1,
+          "value": [
+            1104,
+            -17,
+            0
+          ]
+        },
+        {
+          "frame": 1.5,
+          "value": [
+            1104,
+            32,
+            0
+          ]
+        },
+        {
+          "frame": 2.5,
+          "value": [
+            1009,
+            32,
+            0
+          ]
+        },
+        {
+          "frame": 3,
+          "value": [
+            1009,
+            -17,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}
