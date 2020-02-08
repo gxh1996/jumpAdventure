@@ -22,7 +22,7 @@
       }
     ],
     "_active": true,
-    "_level": 7,
+    "_level": 1,
     "_components": [
       {
         "__id__": 9
@@ -250,6 +250,9 @@
       "__id__": 2
     },
     "_enabled": true,
+    "anim": {
+      "__id__": 4
+    },
     "_id": ""
   },
   {

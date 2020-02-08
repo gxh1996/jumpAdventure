@@ -1,11 +1,10 @@
-import MyComponent from "./myComponent";
 
 const { ccclass, property, disallowMultiple, menu } = cc._decorator;
 
 @ccclass
 @disallowMultiple()
 @menu('自定义组件/FrameAnim')
-export default class FrameAnimation extends MyComponent {
+export default class FrameAnimation extends cc.Component {
 
     @property({
         displayName: "播放速度",
@@ -42,7 +41,7 @@ export default class FrameAnimation extends MyComponent {
     private callBack: Function = null;
     private idleImg: cc.SpriteFrame = null;
 
-    _onLoad() {
+    onLoad() {
         this.sprite = this.node.getComponent(cc.Sprite);
 
         if (this.playOnLoad && this.atlas) {
@@ -142,7 +141,7 @@ export default class FrameAnimation extends MyComponent {
         return this._spriteFrames[this.Index];
     }
 
-    _update(dt) {
+    update(dt) {
         if (this.isPlay) {
             this.timeSum += dt;
             if (this.timeSum >= this.playSpeed) {

@@ -165,7 +165,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 257.2095449239783
+      "z": 234.395188193032
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -738,7 +738,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "rank",
+    "_name": "rankBut",
     "_objFlags": 512,
     "_parent": {
       "__id__": 7
@@ -1236,7 +1236,7 @@
       "__id__": 24
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_level": 4,
     "_components": [
       {

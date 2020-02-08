@@ -40,7 +40,7 @@ export default class FallingPf extends cc.Component {
     }
 
     start() {
-
+        this.fly();
     }
 
     onBeginContact(c: cc.PhysicsContact, s: cc.PhysicsBoxCollider, o: cc.PhysicsBoxCollider) {

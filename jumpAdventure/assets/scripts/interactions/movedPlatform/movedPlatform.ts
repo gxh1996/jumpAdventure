@@ -80,10 +80,10 @@ export default class MovedPlatform extends cc.Component {
         this.node.on("exitUnderPlatform", this._exitUnderPlatform, this);
 
         this.dealAgrs();
-        this.initPlatform();
     }
 
     start() {
+        this.initPlatform();
     }
 
     /**

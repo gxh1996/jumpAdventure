@@ -1,11 +1,15 @@
 {
     "direction:": "levelSum:关卡数目，levelEvaluationConditions:关卡评分依据",
-    "levelSum": 2,
+    "levelSum": 3,
     "levelEvaluationConditions": [
         {
             "direction": "fruitSum:该关水果总数",
             "time": 80,
             "fruitSum": 34
+        },
+        {
+            "time": 210,
+            "fruitSum": 27
         },
         {
             "time": 210,

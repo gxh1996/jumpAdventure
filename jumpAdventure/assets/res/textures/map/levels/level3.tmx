@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="39" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="1">
  <tileset firstgid="1" source="../tileds/tileds.tsx"/>
- <layer id="5" name="bg2" width="30" height="40" visible="0">
+ <layer id="21" name="bg2" width="39" height="40" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+   eJztwTEBAAAAwqD1T20Gf6AAAAAAAAA+AxhgAAE=
   </data>
  </layer>
- <layer id="6" name="bg1" width="30" height="40" visible="0">
+ <layer id="22" name="bg1" width="39" height="40" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+   eJztwTEBAAAAwqD1T20Gf6AAAAAAAAA+AxhgAAE=
   </data>
  </layer>
- <layer id="7" name="chain" width="30" height="40">
+ <layer id="23" name="chain" width="39" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwzENAAAIA7D5V4JMBOzh4mqTJgB8mEMAAADaAllSBek=
+   eJztwTEBAAAAwqD1T20Gf6AAAAAAAAA+AxhgAAE=
   </data>
  </layer>
- <layer id="8" name="main" width="30" height="40">
+ <layer id="24" name="main" width="39" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt0NEJgEAMBNEtWssQ+7AEtSW1BQNeAcIda+TmwX4PySBpMW+MzfKb6HbR3cp2c9ftTfeInbGrQW/V89fM92bq1v7+b/fSpZu1+4XeugAAAA43gx0xzw==
+   eJztlk0KwjAQhaeo51CvKIq6UE8gKv7tdO9Geyr1Fj6hwRDGNE6hSWUefFCSx/CRRdIhEV0SZARWlGaWpG6SqJssMdzGYMIwdXox3LZgx7B3ek1w487ZPeNYblzf7VbJCZwLUnOzo27qxvUPxN+RVTn+6HYFt5rgvJp699YZdZNF3WT5J7cZmBcsEnOrM+oWHvvf8tv7mEdyk0TdZFE3WZrgdgcP8LT2zBqHrxc6o2ymcWtlRG3QyT77Zo3D1wudUTZT3aq5dfHdA31r36xx+HqhM8pmvt3WYJAgG/ACav8Hxg==
   </data>
  </layer>
 </map>

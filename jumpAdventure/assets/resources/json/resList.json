@@ -55,5 +55,20 @@
                 "sounds/jump"
             ]
         }
+    ],
+    "level3": [
+        {
+            "type": "prefab",
+            "urls": [
+                "prefabs/levels/level3"
+            ]
+        },
+        {
+            "type": "audio",
+            "urls": [
+                "sounds/game_over",
+                "sounds/jump"
+            ]
+        }
     ]
 }
