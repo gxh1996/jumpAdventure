@@ -20,19 +20,13 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class Game extends cc.Component {
 
-    /**
-     * 任务资源文件路径
-     */
-    private readonly resUrl: string = "json/resList";
-
     onLoad() {
         if (Global.ins.isSetup)
             return;
 
         this.initModule();
 
-        this.loadGameConfig();
-        this.initFirstScene();
+        this.recordFirstSceneRes();
         if (typeof wx !== "undefined") {
             WXLogin.ins.updateVersion();
         }
@@ -49,7 +43,7 @@ export default class Game extends cc.Component {
         DebugUtil.init();
         DataStorage.init();
         UIHelper.init();
-        ResManager.init(this.resUrl);
+        ResManager.init();
         SoundsManager.init();
 
         //微信
@@ -63,26 +57,12 @@ export default class Game extends cc.Component {
         DebugUtil.ins.log(DebugKey.GameLogic, "初始化模块完成");
     }
 
-    private loadGameConfig() {
-        EventManager.ins.onEventOnce(EventType.LoadTaskResListComplete, () => {
-            ResManager.ins.excuteLoadTask("global", "game", () => {
-                DebugUtil.ins.log(DebugKey.GameLogic, "加载游戏配置信息和测试用户数据完成");
-                EventManager.ins.sendEvent(EventType.LoadGameConfigComplete);
-            })
-        }, this);
-    }
-
-    private initFirstScene() {
-        EventManager.ins.onEventOnce(EventType.LoadGameConfigComplete, () => {
-            ResManager.ins.initFirstScene("indexScene", () => {
-                DebugUtil.ins.log(DebugKey.GameLogic, "初始化首场景完成");
-                EventManager.ins.sendEvent(EventType.ResLoadComplete);
-            })
-        }, this);
+    /**记录首场景资源 */
+    private recordFirstSceneRes() {
+        ResManager.ins.recordCurSceneResUses();
     }
 
     private openDebugKey() {
-
         // DebugUtil.ins.openDebug(DebugKey.GameLogic);
         // DebugUtil.ins.openDebug(DebugKey.LoadPage);
         // DebugUtil.ins.openDebug(DebugKey.MovedPlatformBg);

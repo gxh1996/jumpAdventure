@@ -46,6 +46,7 @@ export enum EventType {
 
     LoadGameScene,
     LoadIndexScene,
+    SceneLoadRate,
 
     /* ----------------微信--------------- */
 

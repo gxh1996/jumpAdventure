@@ -9,9 +9,10 @@ export default class Global {
      * 游戏是否启动过
      */
     isSetup: boolean = false;
-    /**
-     * 首次初始化选关面板
-     */
+
+    /**是否记录了全局资源 */
+    isRecordGlobalRes: boolean = false;
+
     isFirstInitSelectPanel: boolean = true;
 
     /**

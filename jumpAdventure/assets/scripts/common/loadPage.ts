@@ -12,7 +12,7 @@ export default class LoadPage extends cc.Component {
     onLoad() {
         EventManager.ins.onEvent(EventType.OpenLoadPage, this.open, this);
         EventManager.ins.onEvent(EventType.CloseLoadPage, this.close, this);
-        EventManager.ins.onEvent(EventType.UpdateProgress, this.updateProgressBar, this);
+        EventManager.ins.onEvent(EventType.SceneLoadRate, this.updateProgressBar, this);
 
         this.init();
     }

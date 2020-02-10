@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="39" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="1">
  <tileset firstgid="1" source="../tileds/tileds.tsx"/>
- <layer id="21" name="bg2" width="39" height="40" visible="0">
+ <layer id="21" name="bg2" width="39" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20Gf6AAAAAAAAA+AxhgAAE=
+   eJztx1sNgDAUwNBrYDAbMGzAZoOHfw2rjBvSk/SjJSIWWqlSSfQb7dToSPYnXdRpJPubHnrpS/aSJEmSJEmSpH+YQvAiaQ==
   </data>
  </layer>
- <layer id="22" name="bg1" width="39" height="40" visible="0">
+ <layer id="22" name="bg1" width="39" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20Gf6AAAAAAAAA+AxhgAAE=
+   eJzt0jkBgDAAxdAaKGCDwwaHDSj+NRAB7P1DhgzZXy2lDDTSRDXoZ1popS3sdzropCvsb3qo0Rv2Sb70pje96U1v/T/Jl970pje96a3/J/nSm970pje99f8kX3rTm97+/wP1Xlgg
   </data>
  </layer>
  <layer id="23" name="chain" width="39" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20Gf6AAAAAAAAA+AxhgAAE=
+   eJzt0AEJADAIAEH7N7CtEcYQFOEuwfMRAAAA8JbbAZ+me6/9AQDoKitvAcw=
   </data>
  </layer>
  <layer id="24" name="main" width="39" height="40">

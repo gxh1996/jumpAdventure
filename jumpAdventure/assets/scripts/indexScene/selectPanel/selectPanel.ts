@@ -36,27 +36,26 @@ export default class SelectPanel extends cc.Component {
     private levelSum: number;
     /**页面数 */
     private pageSum: number;
-    /**记录用户数据和配置数据是否都得到了 */
-    private initC: number = 0;
+    private isInit: boolean = false;
 
     onLoad() {
         this.dataMgr = DataManager.ins;
         this.eventMgr = EventManager.ins;
         this.resMgr = ResManager.ins;
 
-        this.eventMgr.onEventOnce(EventType.InitConfigComplete, this.init, this);
-        this.eventMgr.onEventOnce(EventType.InitUserDataComplete, this.init, this);
-        // this.eventMgr.onEventOnce(EventType.InitSelectPanel, this.init, this);
-
         this.eventMgr.onEvent(EventType.OpenSelectLevelPanel, this.open, this);
         this.eventMgr.onEvent(EventType.CloseSelectLevelPanel, this.close, this);
+        this.eventMgr.onEvent(EventType.InitUserDataComplete, () => {
+            this.init();
+            Global.ins.isFirstInitSelectPanel = false;
+        }, this);
 
         this.node.on("updatePageContent", this.updatePageContent, this);
 
     }
 
     start() {
-        if (!Global.ins.isFirstInitSelectPanel)
+        if (!this.isInit && !Global.ins.isFirstInitSelectPanel)
             this.init();
     }
 
@@ -64,14 +63,6 @@ export default class SelectPanel extends cc.Component {
      * 初始化选关面板
      */
     private init() {
-        if (Global.ins.isFirstInitSelectPanel) {
-            this.initC++;
-            console.log("选关面板...", this.initC);
-            if (this.initC < 2)
-                return;
-            Global.ins.isFirstInitSelectPanel = false;
-        }
-
         this.emptyPage = this.resMgr.getRes("prefabs/ui/selectPanel/page", cc.Prefab);
 
         this.starSum = this.dataMgr.levelSum * 3;
@@ -84,7 +75,8 @@ export default class SelectPanel extends cc.Component {
         this.node.setPosition(0, 0);
         this.node.active = false;
 
-        DebugUtil.ins.log(DebugKey.GameLogic, "选关面板初始化完成");
+        this.isInit = true;
+        console.log("选关面板初始化完成");
     }
     /**
      * 创建和初始化页面

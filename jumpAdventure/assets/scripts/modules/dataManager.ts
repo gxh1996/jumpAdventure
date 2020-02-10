@@ -23,19 +23,19 @@ export default class DataManager {
     private userData: UserData = null;
 
     private constructor() {
-        this.eventMgr.onEventOnce(EventType.ResLoadComplete, this.initData, this);
         this.eventMgr.onEventOnce(EventType.GotOpenId, this.initUserData, this);
     }
 
-    private initData() {
+    initData() {
         let json: cc.JsonAsset = cc.loader.getRes("json/gameConfig", cc.JsonAsset);
         this.gameLevel = json.json;
 
-        this.eventMgr.sendEvent(EventType.InitConfigComplete);
+        // this.eventMgr.sendEvent(EventType.InitConfigComplete);
 
         if (typeof wx === "undefined") {
             json = cc.loader.getRes("json/userData", cc.JsonAsset);
             this.userData = json.json;
+            console.log("使用用例用户数据");
             this.eventMgr.sendEvent(EventType.InitUserDataComplete);
         }
 

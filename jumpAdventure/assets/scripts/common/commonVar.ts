@@ -139,3 +139,18 @@ export class levelData {
         this.getStar = s;
     }
 }
+
+@ccclass("SceneRes")
+export class SceneRes {
+
+    @property([cc.JsonAsset])
+    jsonArr: cc.JsonAsset[] = [];
+
+    @property({
+        type: [cc.AudioClip]
+    })
+    audioArr: cc.AudioClip[] = [];
+
+    @property([cc.Prefab])
+    prefabArr: cc.Prefab[] = [];
+}

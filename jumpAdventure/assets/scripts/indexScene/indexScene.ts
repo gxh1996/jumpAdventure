@@ -3,11 +3,25 @@ import Global from "../modules/global";
 import ResManager from "../modules/resManager/resManager";
 import DebugUtil, { DebugKey } from "../modules/debugUtil";
 import SoundsManager from "../modules/soundManager";
+import { SceneRes } from "../common/commonVar";
+import DataManager from "../modules/dataManager";
 
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class IndexScene extends cc.Component {
+
+    @property({
+        type: SceneRes,
+        displayName: "全局资源"
+    })
+    private globalRes: SceneRes = new SceneRes();
+
+    @property({
+        type: SceneRes,
+        displayName: "该场景要使用的资源"
+    })
+    private sceneRes: SceneRes = new SceneRes();
 
     private eventMgr: EventManager = null;
     onLoad() {
@@ -17,26 +31,41 @@ export default class IndexScene extends cc.Component {
     }
 
     start() {
+        if (!Global.ins.isRecordGlobalRes) {
+            let recordArr: Function = function (arr: cc.Asset[]) {
+                let a: cc.Asset;
+                for (a of arr)
+                    ResManager.ins.recordUse(a, "global");
+            }
+
+            if (this.globalRes.audioArr.length > 0)
+                recordArr(this.globalRes.audioArr);
+            if (this.globalRes.jsonArr.length > 0)
+                recordArr(this.globalRes.jsonArr);
+            if (this.globalRes.prefabArr.length > 0)
+                recordArr(this.globalRes.prefabArr);
+
+
+            DataManager.ins.initData();
+            Global.ins.isRecordGlobalRes = true;
+        }
+
+        SoundsManager.ins.playBGM("sounds/BGM.mp3");
+
         this.scheduleOnce(() => {
             ResManager.ins.outputCurResNum();
         }, 2);
-
     }
 
     private onEvent() {
         this.eventMgr.onEventOnce(EventType.LoadGameScene, this.loadLevel, this);
-        this.eventMgr.onEventOnce(EventType.LoadGameConfigComplete, () => {
-            console.log("播放背景音乐");
-            SoundsManager.ins.playBGM("sounds/BGM.mp3");
-        }, this);
     }
 
     private loadLevel() {
-
         let n: string = "level" + Global.ins.curLevelNum;
-        DebugUtil.ins.log(DebugKey.GameLogic, `加载场景${n}`);
-        ResManager.ins.loadScene("gameScene", n);
         EventManager.ins.sendEvent(EventType.OpenLoadPage);
+        DebugUtil.ins.log(DebugKey.GameLogic, `加载场景${n}`);
+        ResManager.ins.switchScene(n);
     }
 
 

@@ -1,22 +1,22 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "round",
+  "_name": "saw3",
   "_objFlags": 0,
   "_native": "",
   "_duration": 1,
   "sample": 60,
   "speed": 1,
-  "wrapMode": 2,
+  "wrapMode": 54,
   "curveData": {
     "props": {
-      "angle": [
+      "y": [
         {
           "frame": 0,
-          "value": 0
+          "value": -86.987
         },
         {
           "frame": 1,
-          "value": 360
+          "value": 10.465
         }
       ]
     }
