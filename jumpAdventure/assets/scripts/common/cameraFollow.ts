@@ -42,17 +42,18 @@ export default class Follow extends cc.Component {
         EventManager.ins.onEvent(EventType.StartCameraFollow, () => { self.isFollow = true; }, this);
         EventManager.ins.onEvent(EventType.StopCameraFollow, () => { self.isFollow = false; }, this);
         EventManager.ins.onEvent(EventType.CheckPlayerOutFace, this.checkPlayerOutFace, this);
-        EventManager.ins.onEvent(EventType.InitCamera, this.init, this);
+        // EventManager.ins.onEvent(EventType.InitCamera, this.init, this);
         // EventManager.ins.onEvent(EventType.ResetGame, () => {
         //     self.isFollow = false;
         //     self.isCheckOF = false;
         // }, this);
     }
 
-    private init() {
-        this.target = cc.find("Canvas/gameContent/level" + Global.ins.curLevelNum + "/player");
-        this.map = cc.find("Canvas/gameContent/level" + Global.ins.curLevelNum + "/map/tiledMap").getComponent(cc.TiledMap);
+    start() {
+        this.init();
+    }
 
+    private init() {
         this.initConfig();
         this.isFollow = true;
         this.isCheckOF = false;
@@ -85,6 +86,15 @@ export default class Follow extends cc.Component {
             minX: mapP.x + viewSize.width / 2,
             maxX: mapP.x + ms.width - viewSize.width / 2
         }
+
+        //设计分辨率宽大于地图宽时
+        if (this.range.minX > this.range.maxX) {
+            let t: number = this.range.minX;
+            this.range.minX = this.range.maxX;
+            this.range.maxX = t;
+        }
+
+        console.log("摄像机移动范围", this.range);
     }
 
     /**

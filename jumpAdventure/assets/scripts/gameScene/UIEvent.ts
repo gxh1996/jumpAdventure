@@ -138,6 +138,8 @@ export default class UIEvent extends cc.Component {
         this.resetButton.active = true;
         if (Global.ins.curLevelNum < DataManager.ins.levelSum)
             this.nextButton.active = true;
+        else
+            this.nextButton.active = false;
 
         this.butLayout.updateLayout();
         // this.indexButton.setPosition(this.butPoints[0]);

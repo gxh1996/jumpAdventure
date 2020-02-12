@@ -8,8 +8,9 @@ export default class SoundsManager {
         this.ins = new SoundsManager();
     }
 
-    ''
+
     private isOpenSounds: boolean = true;
+    private isPlayingBGM: boolean = false;
 
     openSound() {
         this.playBGM("sounds/BGM");
@@ -26,7 +27,10 @@ export default class SoundsManager {
      * @param url 文件路径
      */
     playBGM(url: string, v?: number) {
+        if (this.isPlayingBGM)
+            return;
         this.isOpenSounds = true;
+        this.isPlayingBGM = true;
 
         if (v)
             cc.audioEngine.setMusicVolume(v);
@@ -35,6 +39,7 @@ export default class SoundsManager {
 
     pauseBGM() {
         this.isOpenSounds = false;
+        this.isPlayingBGM = false;
         cc.audioEngine.pauseMusic();
     }
 

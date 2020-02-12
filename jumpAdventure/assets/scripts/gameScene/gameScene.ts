@@ -30,7 +30,7 @@ export default class GameScene extends cc.Component {
     }
 
     private initGameScene() {
-        EventManager.ins.sendEvent(EventType.InitCamera);
+        // EventManager.ins.sendEvent(EventType.InitCamera);
         EventManager.ins.sendEvent(EventType.InitPlayer);
         EventManager.ins.sendEvent(EventType.InitScoreMgr);
         EventManager.ins.sendEvent(EventType.InitGameScene);

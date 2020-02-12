@@ -4,16 +4,16 @@
     "levelEvaluationConditions": [
         {
             "direction": "fruitSum:该关水果总数",
-            "time": 80,
+            "time": 60,
             "fruitSum": 34
         },
         {
-            "time": 210,
+            "time": 200,
             "fruitSum": 27
         },
         {
-            "time": 210,
-            "fruitSum": 27
+            "time": 100,
+            "fruitSum": 17
         }
     ]
 }
